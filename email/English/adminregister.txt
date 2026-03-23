@@ -1,7 +1,0 @@
-Notification on registering
-
-User registered at %url%
-
-Username: %username_value%
-Fullname1: %fullname1_value%
-Email: %email_value%
