@@ -1,0 +1,392 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+				<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{$pagetitle}</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<base href="{$projectPath}">
+		<link REL="stylesheet" href="styles/default.css?{$wizardBuildKey}" type="text/css">
+	{BEGIN rtlCSS}
+	<link REL="stylesheet" href="styles/defaultRTL.css?{$wizardBuildKey}" type="text/css">
+	{END rtlCSS}
+	{BEGIN styleCSSFiles}
+	<link REL="stylesheet" href="{$stylepath}" type="text/css">
+	{END styleCSSFiles}
+			
+	</head>
+
+	<body class="{$stylename} function-search" >
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		{$locking}
+		<div class="r-small-page" 
+			data-body-align="center"
+			data-body-width="standard"
+		>
+							{BEGIN top_block}
+<div class="r-form" data-location="top" id="form_top_{$pageid}" data-makeup="small" {$form_top} data-pageid="{$pageid}"
+		data-v-width="6"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="top_c1" data-pageid="{$pageid}"	{$cell_top_c1}
+	class=" r-ori-vert			col-md-12
+	">
+	 
+		<h2 data-itemtype="search_header" data-itemid="search_header" {$item_search_header} data-pageid="{$pageid}" >{$pagetitlelabel tbl_income search}</h2>
+	</div>					</div>
+	</div>		
+{END top_block}
+									{BEGIN above-grid_block}
+<div class="r-form" data-location="above-grid" id="form_above-grid_{$pageid}" data-makeup="small" {$form_above-grid} data-pageid="{$pageid}"
+		data-v-width="6"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="above-grid_c1" data-pageid="{$pageid}"	{$cell_above-grid_c1}
+	class=" r-ori-vert			col-md-12
+	">
+	</div>					</div>
+	</div>		
+{END above-grid_block}
+									{BEGIN grid_block}
+
+
+
+
+ 
+	 
+												<table 
+	data-body-align="center"
+	data-location="grid" id="form_grid_{$pageid}" data-makeup="small" {$form_grid} data-pageid="{$pageid}" 
+	class="r-edit-form" cellpadding="0" cellspacing="0" 
+	{$grid_hiddenattr} 
+		data-form-width="1"
+		
+		data-v-width="6"
+	>
+	<tbody>
+										<tr {$row_grid_0} >
+										
+
+{BEGIN cellblock_grid_c3}
+<td
+	{$cell_grid_c3}
+	class=" r-ori-vert"
+	
+				data-fullwidth
+		
+			data-cellId="grid_c3" data-pageid="{$pageid}"
+		data-v-cell="6"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN id_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_id}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="id{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field" {$item_integrated_search_field} data-pageid="{$pageid}" data-field="id" data-fieldname="id" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_id}">
+		{$label tbl_income id }	</label>
+	<div class="r-search-option">
+		{$searchtype_id}
+	</div>
+	<div class="r-search-field">
+		{$id_editcontrol}	</div>
+	<div class="r-search-field">
+		{$id_editcontrol1}
+	</div>
+	
+</div>
+
+{END id_fieldblock}
+											
+{BEGIN user_id_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_user_id}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="user_id{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field1" {$item_integrated_search_field1} data-pageid="{$pageid}" data-field="user_id" data-fieldname="user_id" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_user_id}">
+		{$label tbl_income user_id }	</label>
+	<div class="r-search-option">
+		{$searchtype_user_id}
+	</div>
+	<div class="r-search-field">
+		{$user_id_editcontrol}	</div>
+	<div class="r-search-field">
+		{$user_id_editcontrol1}
+	</div>
+	
+</div>
+
+{END user_id_fieldblock}
+											
+{BEGIN income_date_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_income_date}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="income_date{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field2" {$item_integrated_search_field2} data-pageid="{$pageid}" data-field="income_date" data-fieldname="income_date" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_income_date}">
+		{$label tbl_income income_date }	</label>
+	<div class="r-search-option">
+		{$searchtype_income_date}
+	</div>
+	<div class="r-search-field">
+		{$income_date_editcontrol}	</div>
+	<div class="r-search-field">
+		{$income_date_editcontrol1}
+	</div>
+	
+</div>
+
+{END income_date_fieldblock}
+											
+{BEGIN amount_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_amount}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="amount{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field3" {$item_integrated_search_field3} data-pageid="{$pageid}" data-field="amount" data-fieldname="amount" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_amount}">
+		{$label tbl_income amount }	</label>
+	<div class="r-search-option">
+		{$searchtype_amount}
+	</div>
+	<div class="r-search-field">
+		{$amount_editcontrol}	</div>
+	<div class="r-search-field">
+		{$amount_editcontrol1}
+	</div>
+	
+</div>
+
+{END amount_fieldblock}
+											
+{BEGIN category_id_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_category_id}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="category_id{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field4" {$item_integrated_search_field4} data-pageid="{$pageid}" data-field="category_id" data-fieldname="category_id" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_category_id}">
+		{$label tbl_income category_id }	</label>
+	<div class="r-search-option">
+		{$searchtype_category_id}
+	</div>
+	<div class="r-search-field">
+		{$category_id_editcontrol}	</div>
+	<div class="r-search-field">
+		{$category_id_editcontrol1}
+	</div>
+	
+</div>
+
+{END category_id_fieldblock}
+											
+{BEGIN description_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_description}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="description{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field5" {$item_integrated_search_field5} data-pageid="{$pageid}" data-field="description" data-fieldname="description" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_description}">
+		{$label tbl_income description }	</label>
+	<div class="r-search-option">
+		{$searchtype_description}
+	</div>
+	<div class="r-search-field">
+		{$description_editcontrol}	</div>
+	<div class="r-search-field">
+		{$description_editcontrol1}
+	</div>
+	
+</div>
+
+{END description_fieldblock}
+											
+{BEGIN receipt_path_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_receipt_path}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="receipt_path{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field6" {$item_integrated_search_field6} data-pageid="{$pageid}" data-field="receipt_path" data-fieldname="receipt_path" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_receipt_path}">
+		{$label tbl_income receipt_path }	</label>
+	<div class="r-search-option">
+		{$searchtype_receipt_path}
+	</div>
+	<div class="r-search-field">
+		{$receipt_path_editcontrol}	</div>
+	<div class="r-search-field">
+		{$receipt_path_editcontrol1}
+	</div>
+	
+</div>
+
+{END receipt_path_fieldblock}
+											
+{BEGIN created_at_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_created_at}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="created_at{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field7" {$item_integrated_search_field7} data-pageid="{$pageid}" data-field="created_at" data-fieldname="created_at" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_created_at}">
+		{$label tbl_income created_at }	</label>
+	<div class="r-search-option">
+		{$searchtype_created_at}
+	</div>
+	<div class="r-search-field">
+		{$created_at_editcontrol}	</div>
+	<div class="r-search-field">
+		{$created_at_editcontrol1}
+	</div>
+	
+</div>
+
+{END created_at_fieldblock}
+											
+{BEGIN original_currency_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_original_currency}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="original_currency{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field8" {$item_integrated_search_field8} data-pageid="{$pageid}" data-field="original_currency" data-fieldname="original_currency" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_original_currency}">
+		{$label tbl_income original_currency }	</label>
+	<div class="r-search-option">
+		{$searchtype_original_currency}
+	</div>
+	<div class="r-search-field">
+		{$original_currency_editcontrol}	</div>
+	<div class="r-search-field">
+		{$original_currency_editcontrol1}
+	</div>
+	
+</div>
+
+{END original_currency_fieldblock}
+											
+{BEGIN original_amount_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_original_amount}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="original_amount{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field9" {$item_integrated_search_field9} data-pageid="{$pageid}" data-field="original_amount" data-fieldname="original_amount" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_original_amount}">
+		{$label tbl_income original_amount }	</label>
+	<div class="r-search-option">
+		{$searchtype_original_amount}
+	</div>
+	<div class="r-search-field">
+		{$original_amount_editcontrol}	</div>
+	<div class="r-search-field">
+		{$original_amount_editcontrol1}
+	</div>
+	
+</div>
+
+{END original_amount_fieldblock}
+											
+{BEGIN exchange_rate_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_exchange_rate}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="exchange_rate{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field10" {$item_integrated_search_field10} data-pageid="{$pageid}" data-field="exchange_rate" data-fieldname="exchange_rate" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_exchange_rate}">
+		{$label tbl_income exchange_rate }	</label>
+	<div class="r-search-option">
+		{$searchtype_exchange_rate}
+	</div>
+	<div class="r-search-field">
+		{$exchange_rate_editcontrol}	</div>
+	<div class="r-search-field">
+		{$exchange_rate_editcontrol1}
+	</div>
+	
+</div>
+
+{END exchange_rate_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c3}
+								</tr>
+			</tbody></table>
+{END grid_block}
+									{BEGIN below-grid_block}
+<div class="r-form" data-location="below-grid" id="form_below-grid_{$pageid}" data-makeup="small" {$form_below-grid} data-pageid="{$pageid}"
+		data-v-width="6"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="below-grid_c1" data-pageid="{$pageid}"	{$cell_below-grid_c1}
+	class="			col-md-12
+	">
+	 
+		<span data-itemtype="search_search" data-itemid="search_search" {$item_search_search} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-primary   
+	" {$searchbutton_attrs} data-page=undefined >
+							Search			</a>
+</span>
+	 
+		<span data-itemtype="search_reset" data-itemid="search_reset" {$item_search_reset} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" {$resetbutton_attrs} >
+							Reset			</a>
+</span>
+	 
+		{BEGIN back_button}
+<span data-itemtype="search_back_list" data-itemid="search_back_list" {$item_search_back_list} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" {$backbutton_attrs} >
+							Back to list			</a>
+</span>
+{END back_button}
+	 
+		{BEGIN cancel_button}
+<span data-itemtype="search_cancel" data-itemid="search_cancel" {$item_search_cancel} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" id="cancelButton{$id}" >
+							Cancel			</a>
+</span>
+{END cancel_button}
+	</div>					</div>
+	</div>		
+{END below-grid_block}
+			</div>
+		{$footer}
+	{END body}
+	</body>
+</html>
