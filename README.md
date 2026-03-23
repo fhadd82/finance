@@ -13,6 +13,7 @@
 
 The system features a modern user interface utilizing **Glassmorphism** and **Mesh Gradient** concepts, making it highly responsive, fast, and visually appealing across all devices (PC, Tablet, and Smartphones).
 
+Demo Account : https://fhadd.com/finance/login.php (Please Register Here)
 ---
 
 ## ✨ Key Features
@@ -90,6 +91,8 @@ Please follow the steps below to run this system on your local machine (*Localho
 
 Sistem ini menampilkan antaramuka menggunakan konsep **Glassmorphism** dan **Mesh Gradient**, menjadikannya sangat responsif, pantas, dan sedap mata memandang di semua peranti (PC, Tablet, dan Telefon Pintar).
 
+Demo Account : https://fhadd.com/finance/login.php (Sila Daftar Di Sini)
+Emel ke admin@fhadd.com untuk info lanjut.
 ---
 
 ## ✨ Ciri-ciri Utama
