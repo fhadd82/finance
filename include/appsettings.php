@@ -598,11 +598,11 @@ $globalSettings["useBuiltInMailer"] = false;
 
 $globalSettings["useCustomSMTPSettings"] = true;
 
-$globalSettings["strSMTPUser"] = "admin@fhadd.com";
-$globalSettings["strSMTPServer"] = "mail.fhadd.com";
+$globalSettings["strSMTPUser"] = "";
+$globalSettings["strSMTPServer"] = "";
 $globalSettings["strSMTPPort"] = "465";
-$globalSettings["strSMTPPassword"] = "Fu@d1982";
-$globalSettings["strFromEmail"] = "admin@fhadd.com";
+$globalSettings["strSMTPPassword"] = "";
+$globalSettings["strFromEmail"] = "";
 
 $globalSettings["SMTPSecure"] = "ssl";
 //
@@ -757,9 +757,9 @@ $suggestAllContent = true;
 $strLastSQL = "";
 $showCustomMarkerOnPrint = false;
 
-$projectBuildKey = "221_1774239944";
+$projectBuildKey = "223_1774239944";
 $wizardBuildKey = "41974";
-$projectBuildNumber = "221";
+$projectBuildNumber = "223";
 
 $mlang_messages = array();
 $mlang_charsets = array();
