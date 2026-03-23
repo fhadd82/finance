@@ -1,0 +1,147 @@
+<!doctype html>
+<html {$html_attrs}>
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{$pagetitle} - Pendaftaran Berjaya</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <base href="{$projectPath}">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <script> tailwind.config = { darkMode: 'class' } </script>
+
+    <link REL="stylesheet" href="styles/default.css?{$wizardBuildKey}" type="text/css">
+    {BEGIN rtlCSS}
+    <link REL="stylesheet" href="styles/defaultRTL.css?{$wizardBuildKey}" type="text/css">
+    {END rtlCSS}
+    {BEGIN styleCSSFiles}
+    <link REL="stylesheet" href="{$stylepath}" type="text/css">
+    {END styleCSSFiles}
+    
+    <style>
+        body { 
+            font-family: 'Plus Jakarta Sans', sans-serif; 
+            /* LATAR BELAKANG MESH GRADIENT KITA */
+            background-color: #f8fafc;
+            background-image: 
+                radial-gradient(at 80% 0%, hsla(239, 100%, 94%, 1) 0px, transparent 50%),
+                radial-gradient(at 0% 50%, hsla(293, 100%, 95%, 1) 0px, transparent 50%),
+                radial-gradient(at 80% 100%, hsla(200, 100%, 94%, 1) 0px, transparent 50%),
+                radial-gradient(at 0% 0%, hsla(333, 100%, 95%, 1) 0px, transparent 50%);
+            background-attachment: fixed;
+            background-size: cover;
+        }
+
+        /* Animasi Lembut Muncul */
+        @keyframes fadeUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .animate-fade-up { animation: fadeUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards; }
+
+        /* Pembersihan Default PHPRunner */
+        .r-edit-label { display: none !important; } 
+        .r-panel-page, .bs-pagepanel, .panel-heading, .panel-body, .r-controls, .r-ori-vert, .r-edit-form, tbody, tr, td { display: contents !important; }
+        .r-form, .row, [class*="col-md-"] { width: 100% !important; max-width: none !important; margin: 0 !important; padding: 0 !important; box-shadow: none !important; border: none !important; background: transparent !important; }
+    </style>
+</head>
+
+<body class="{$stylename} function-register_success min-h-screen flex items-center justify-center p-4 sm:p-8">
+{BEGIN body}
+    
+    <div class="hidden">{$header}</div>
+    
+    <div class="fixed inset-0 overflow-hidden pointer-events-none z-0 flex justify-center items-center">
+        <div class="absolute w-[400px] h-[400px] bg-indigo-500/10 rounded-full mix-blend-multiply filter blur-[80px] opacity-70 animate-blob"></div>
+        <div class="absolute w-[400px] h-[400px] bg-violet-500/10 rounded-full mix-blend-multiply filter blur-[80px] opacity-70 animate-blob animation-delay-2000 ml-[200px]"></div>
+        <div class="absolute w-[400px] h-[400px] bg-blue-500/10 rounded-full mix-blend-multiply filter blur-[80px] opacity-70 animate-blob animation-delay-4000 mt-[200px]"></div>
+    </div>
+    
+    <div class="w-full max-w-[460px] animate-fade-up relative z-10 mx-auto my-auto">
+        
+        <div class="text-center mb-8">
+            <div class="inline-flex items-center justify-center w-16 h-16 rounded-[1.25rem] bg-white shadow-xl shadow-indigo-900/10 border border-white mb-4 text-emerald-500 transition-transform duration-500 hover:scale-105 hover:rotate-3">
+                <i class="fas fa-check-circle text-4xl"></i>
+            </div>
+            <h1 class="text-3xl sm:text-4xl font-black text-slate-800 tracking-tight">Sistem Kewangan</h1>
+            <p class="text-xs font-bold text-slate-500 uppercase tracking-widest mt-2 opacity-80">Pendaftaran Berjaya</p>
+        </div>
+
+        <div class="bg-white/80 backdrop-blur-2xl rounded-[2rem] shadow-[0_8px_30px_rgb(0,0,0,0.06)] p-7 sm:p-10 border border-white/60 text-center">
+
+            {BEGIN top_block}
+            <div data-location="top" id="form_top_{$pageid}" data-makeup="panel" {$form_top} data-pageid="{$pageid}" class="mb-6">
+                <h3 data-itemtype="register_success_header" data-itemid="register_success_header" {$item_register_success_header} data-pageid="{$pageid}" class="text-2xl font-black text-slate-800 tracking-tight">
+                    {$pagetitlelabel register_success}
+                </h3>
+            </div>
+            {END top_block}
+
+            {BEGIN above-grid_block}
+            <div data-location="above-grid" id="form_above-grid_{$pageid}" data-makeup="panel" {$form_above-grid} data-pageid="{$pageid}" class="mb-8">
+                <div data-cellId="above-grid_c1" data-pageid="{$pageid}">
+                    {BEGIN firstAboveGridCell}
+                    <div class="bg-emerald-50/80 backdrop-blur-md border border-emerald-100 text-emerald-700 px-6 py-8 rounded-2xl text-sm font-bold shadow-sm flex flex-col items-center justify-center relative overflow-hidden">
+                        
+                        <div class="absolute -right-4 -top-4 w-24 h-24 bg-emerald-200/40 rounded-full blur-2xl"></div>
+                        <div class="absolute -left-4 -bottom-4 w-24 h-24 bg-emerald-200/40 rounded-full blur-2xl"></div>
+
+                        <div class="w-12 h-12 bg-emerald-100 text-emerald-600 rounded-full flex items-center justify-center mb-4 relative z-10 shadow-inner">
+                            <i class="fas fa-glass-cheers text-xl"></i>
+                        </div>
+                        
+                        <div class="{$activate_message_class} relative z-10 text-center leading-relaxed" data-itemtype="register_activate_message" data-itemid="register_activate_message" {$item_register_activate_message} data-pageid="{$pageid}">
+                            {$label_register_activate_message}
+                        </div>
+                        
+                        <span data-itemtype="register_activated_message" data-itemid="register_activated_message" {$item_register_activated_message} data-pageid="{$pageid}" class="relative z-10 text-center leading-relaxed mt-2 block">
+                            Terima kasih. Akaun anda telah berjaya diaktifkan.
+                        </span>
+                        
+                    </div>
+                    {END firstAboveGridCell}
+                </div>
+            </div>
+            {END above-grid_block}
+
+            {BEGIN grid_block}
+            <div data-location="grid" id="form_grid_{$pageid}" data-makeup="panel" {$form_grid} data-pageid="{$pageid}">
+                <div data-cellId="grid_c2" data-pageid="{$pageid}" class="flex flex-col space-y-4">
+                    
+                    <span data-itemtype="register_proceed" data-itemid="register_proceed" {$item_register_proceed} data-pageid="{$pageid}" data-button-item class="w-full block">
+                        <a type="button" class="w-full min-h-[56px] flex items-center justify-center bg-slate-900 hover:bg-indigo-600 text-white rounded-2xl font-black text-[13px] uppercase tracking-widest shadow-[0_10px_20px_rgba(0,0,0,0.1)] hover:shadow-[0_10px_25px_rgba(79,70,229,0.3)] transform hover:-translate-y-1 transition-all duration-300 cursor-pointer" {$loginlink_attrs}>
+                            Teruskan ke Log Masuk <i class="fas fa-arrow-right ml-2 opacity-70"></i>
+                        </a>
+                    </span>
+                    
+                    <span data-itemtype="register_close" data-itemid="register_close" {$item_register_close} data-pageid="{$pageid}" data-button-item class="w-full block mt-2">
+                        <a type="button" class="w-full min-h-[56px] flex items-center justify-center bg-white border-2 border-slate-200 hover:border-slate-300 hover:bg-slate-50 text-slate-600 rounded-2xl font-black text-[13px] uppercase tracking-widest transition-all duration-300 cursor-pointer" href="#" {$closewindow_attrs}>
+                            <i class="fas fa-times mr-2 opacity-70"></i> Tutup
+                        </a>
+                    </span>
+                    
+                </div>
+            </div>
+            {END grid_block}
+
+            {BEGIN footer_block}
+            <div class="hidden" data-location="footer" id="form_footer_{$pageid}" data-makeup="panel" {$form_footer} data-pageid="{$pageid}"></div>
+            {END footer_block}
+            
+        </div>
+
+        <div class="mt-10 text-center text-[10px] font-bold text-slate-400 uppercase tracking-widest w-full">
+            &copy; <?php echo date('Y'); ?> Sistem Kewangan Anda
+        </div>
+        
+    </div>
+    
+    <div class="hidden">{$footer}</div>
+    
+{END body}
+</body>
+</html>
